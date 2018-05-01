@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Inizializza gli attributi per la SoundPool
         AudioAttributes audioAttributes = new AudioAttributes.Builder()
-                .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
-                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .setUsage(AudioAttributes.USAGE_MEDIA)
+                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
                 .build();
 
         // Inizializza la SoundPool
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         pool.setOnLoadCompleteListener(new SoundPool.OnLoadCompleteListener() {
             @Override
             public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
-                System.out.println("Sound " + sampleId + " loaded.");
+                System.out.println("Sound " + sampleId + " loading operation returned " + status);
                 mediaLoaded = true;
             }
         });
