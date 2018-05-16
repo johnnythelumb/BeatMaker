@@ -122,5 +122,29 @@
                 style="?android:attr/borderlessButtonStyle"/>
         </TableRow>
 
+        <Button
+            android:id="@+id/pack1"
+            android:tag="pack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selection_button"
+            android:onClick="onPackSelectionClick"
+            android:textColor="#FAFAFA"
+            android:text="Rock Sound Pack"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/pack2"
+            android:tag="pack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selection_button"
+            android:onClick="onPackSelectionClick"
+            android:textColor="#FAFAFA"
+            android:text="Techno Sound Pack"
+            style="?android:attr/borderlessButtonStyle"/>
+
     </TableLayout>
 </android.support.constraint.ConstraintLayout>

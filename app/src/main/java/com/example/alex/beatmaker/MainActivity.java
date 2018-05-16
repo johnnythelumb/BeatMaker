@@ -108,6 +108,38 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onPackSelectionClick(View v) {
+        Button button = findViewById(v.getId());
+        String tag = v.getTag().toString();
+
+        sounds.clear();
+
+        switch(tag) {
+            case "pack1":
+                sounds.add(pool.load(this, R.raw.sound1, 1));
+                sounds.add(pool.load(this, R.raw.sound2, 1));
+                sounds.add(pool.load(this, R.raw.sound3, 1));
+                sounds.add(pool.load(this, R.raw.sound4, 1));
+                sounds.add(pool.load(this, R.raw.sound5, 1));
+                sounds.add(pool.load(this, R.raw.sound6, 1));
+                sounds.add(pool.load(this, R.raw.sound7, 1));
+                sounds.add(pool.load(this, R.raw.sound8, 1));
+                sounds.add(pool.load(this, R.raw.sound9, 1));
+                break;
+            case "pack2":
+                sounds.add(pool.load(this, R.raw.sound10, 1));
+                sounds.add(pool.load(this, R.raw.sound11, 1));
+                sounds.add(pool.load(this, R.raw.sound12, 1));
+                sounds.add(pool.load(this, R.raw.sound13, 1));
+                sounds.add(pool.load(this, R.raw.sound14, 1));
+                sounds.add(pool.load(this, R.raw.sound15, 1));
+                sounds.add(pool.load(this, R.raw.sound16, 1));
+                sounds.add(pool.load(this, R.raw.sound17, 1));
+                sounds.add(pool.load(this, R.raw.sound18, 1));
+                break;
+        }
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
